@@ -61,16 +61,20 @@ function create() {
   for (let i = 0; i < tdTag.length; i++) {
     const divShow = document.createElement("div");
     const divHide = document.createElement("div");
+    const pShow = document.createElement("p");
+    const pHide = document.createElement("p");
 
     tdTag[i].replaceChildren(); //borrar hijos de tag td
     tdTag[i].appendChild(divShow);
     tdTag[i].appendChild(divHide);
+    divShow.appendChild(pShow);
+    divHide.appendChild(pHide);
     divShow.setAttribute("class", "show");
     divHide.setAttribute("class", "hide");
     divShow.style.display = "none";
     divHide.style.display = "block";
-    divShow.textContent = newImgs[i];
-    divHide.textContent = "❔";
+    pShow.textContent = newImgs[i];
+    pHide.textContent = "❔";
   }
 }
 
