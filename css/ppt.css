@@ -1,0 +1,74 @@
+body {
+  background-color: #635a5a !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectJuego {
+  background-color: white;
+  margin: 3rem;
+  width: 50rem;
+  height: 25rem;
+  border-radius: 0.5rem;
+}
+h1{
+  text-align: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+.select{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+button{
+  margin: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+p {
+  font-size: 2rem;
+  text-align: center;
+}
+.extra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.extra p {
+  margin: 0.5rem 0;
+}
+#eleccion {
+  height: 50px;
+}
+.divResultado{
+  height: 110px;
+}
+#resultado {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  align-content: center;
+}
+#marcador {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #d8cccc;
+}
+.card {
+  font-size: 4rem;
+  background-color: blue !important;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#marcador {
+  font-weight: bolder;
+}

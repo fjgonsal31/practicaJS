@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/tresEnRaya.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tres en Raya</title>
+</head>
+
+<body>
+    <!-- tabla de juego -->
+    <section class="sectJuego">
+        <h1>Tres en Raya</h1>
+        <table>
+            <tr>
+                <td class="td" id="a1"></td>
+                <td class="td" id="a2"></td>
+                <td class="td" id="a3"></td>
+            </tr>
+            <tr>
+                <td class="td" id="b1"></td>
+                <td class="td" id="b2"></td>
+                <td class="td" id="b3"></td>
+            </tr>
+            <tr>
+                <td class="td" id="c1"></td>
+                <td class="td" id="c2"></td>
+                <td class="td" id="c3"></td>
+            </tr>
+        </table>
+        <p id="marcador"></p>
+    </section>
+    <!-- modal -->
+    <section id="myModal" class="modal">
+        <div class="modal-content">
+            <h2 id="resultado"></h2>
+            <button id="aceptar" class="success">Aceptar</button>
+        </div>
+    </section>
+    <script src="js/tresEnRaya.js"></script>
+</body>
+
+</html>

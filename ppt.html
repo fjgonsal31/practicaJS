@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ppt.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Piedra, papel o tijera</title>
+</head>
+
+<body>
+    <h1>Piedra, Papel o Tijera</h1>
+    <section class="sectJuego">
+        <div class="select">
+            <button type="button" class="card" id="piedra" onclick="piedra()">👊</button>
+            <button type="button" class="card" id="papel" onclick="papel()">✋</button>
+            <button type="button" class="card" id="tijera" onclick="tijera()">🖖</button>
+        </div>
+        <div class="extra">
+            <p id="eleccion"></p>
+            <div class="divResultado">
+                <p id="resultado"></p>
+            </div>
+            <div>
+                <p id="marcador">User: 0 - BOTin: 0</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/ppt.js"></script>
+</body>
+
+</html>
