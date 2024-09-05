@@ -66,3 +66,9 @@ td {
   font-size: x-large;
   font-weight: bolder;
 }
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 45%;
+  }
+}

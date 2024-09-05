@@ -129,6 +129,7 @@ td {
   width: 40%;
   height: auto;
   border-radius: 0.5rem;
+  text-align: center;
 }
 h2 {
   text-align: center;
@@ -162,4 +163,10 @@ form {
   border-radius: 5px;
   padding: 30px;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 50%;
+  }
 }

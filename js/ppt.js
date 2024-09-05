@@ -29,7 +29,7 @@ function piedra() {
   reset();
 
   setTimeout(() => {
-    pEleccion.textContent = `${nombreJug} escoge: ${btnPiedra.textContent} & BOTin eligió: ${botElec[botElecR]}`;
+    pEleccion.innerHTML = `${nombreJug} escoge: ${btnTijera.textContent}<br>&<br>BOTin eligió: ${botElec[botElecR]}`;  
   }, 400);
 
   setTimeout(() => {
@@ -57,7 +57,7 @@ function papel() {
   reset();
 
   setTimeout(() => {
-    pEleccion.textContent = `${nombreJug} escoge: ${btnPapel.textContent} & BOTin eligió: ${botElec[botElecR]}`;
+    pEleccion.innerHTML = `${nombreJug} escoge: ${btnTijera.textContent}<br>&<br>BOTin eligió: ${botElec[botElecR]}`;  
   }, 400);
 
   setTimeout(() => {
@@ -85,7 +85,7 @@ function tijera() {
   reset();
 
   setTimeout(() => {
-    pEleccion.textContent = `${nombreJug} escoge: ${btnTijera.textContent} & BOTin eligió: ${botElec[botElecR]}`;
+    pEleccion.innerHTML = `${nombreJug} escoge: ${btnTijera.textContent}<br>&<br>BOTin eligió: ${botElec[botElecR]}`;    
   }, 400);
 
   setTimeout(() => {
@@ -116,7 +116,7 @@ function showMarcador(con1, con2) {
 //******************EJECUCION******************
 
 if (nombreJug) {
-  nombreJug = nombreJug.slice(0, 20);
+  nombreJug = nombreJug.slice(0, 17);
 } else {
   nombreJug = "User";
 }
