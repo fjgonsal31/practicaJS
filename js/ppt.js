@@ -23,13 +23,32 @@ function reset() {
   pResultado.textContent = "";
   pResultado.style.border = "none";
   botElecR = Math.floor(Math.random() * botElec.length);
+  desactiveButton();
+}
+
+function activeButton() {
+  btnPiedra.disabled = false;
+  btnPapel.disabled = false;
+  btnTijera.disabled = false;
+  btnPiedra.style.pointerEvents = "auto";
+  btnPapel.style.pointerEvents = "auto";
+  btnTijera.style.pointerEvents = "auto";
+}
+
+function desactiveButton() {
+  btnPiedra.disabled = true;
+  btnPapel.disabled = true;
+  btnTijera.disabled = true;
+  btnPiedra.style.pointerEvents = "none";
+  btnPapel.style.pointerEvents = "none";
+  btnTijera.style.pointerEvents = "none";
 }
 
 function piedra() {
   reset();
 
   setTimeout(() => {
-    pEleccion.innerHTML = `${nombreJug} escoge: ${btnTijera.textContent}<br>&<br>BOTin eligió: ${botElec[botElecR]}`;  
+    pEleccion.innerHTML = `${nombreJug} escoge: ${btnTijera.textContent}<br>&<br>BOTin eligió: ${botElec[botElecR]}`;
   }, 400);
 
   setTimeout(() => {
@@ -50,6 +69,7 @@ function piedra() {
         break;
     }
     showMarcador(con1, con2);
+    activeButton();
   }, 1300);
 }
 
@@ -57,7 +77,7 @@ function papel() {
   reset();
 
   setTimeout(() => {
-    pEleccion.innerHTML = `${nombreJug} escoge: ${btnTijera.textContent}<br>&<br>BOTin eligió: ${botElec[botElecR]}`;  
+    pEleccion.innerHTML = `${nombreJug} escoge: ${btnTijera.textContent}<br>&<br>BOTin eligió: ${botElec[botElecR]}`;
   }, 400);
 
   setTimeout(() => {
@@ -78,6 +98,7 @@ function papel() {
         break;
     }
     showMarcador(con1, con2);
+    activeButton();
   }, 1300);
 }
 
@@ -85,7 +106,7 @@ function tijera() {
   reset();
 
   setTimeout(() => {
-    pEleccion.innerHTML = `${nombreJug} escoge: ${btnTijera.textContent}<br>&<br>BOTin eligió: ${botElec[botElecR]}`;    
+    pEleccion.innerHTML = `${nombreJug} escoge: ${btnTijera.textContent}<br>&<br>BOTin eligió: ${botElec[botElecR]}`;
   }, 400);
 
   setTimeout(() => {
@@ -106,6 +127,7 @@ function tijera() {
         break;
     }
     showMarcador(con1, con2);
+    activeButton();
   }, 1300);
 }
 
@@ -122,3 +144,15 @@ if (nombreJug) {
 }
 
 showMarcador(con1, con2);
+
+btnPiedra.addEventListener("click", () => {
+  piedra();
+});
+
+btnPapel.addEventListener("click", () => {
+  papel();
+});
+
+btnTijera.addEventListener("click", () => {
+  tijera();
+});
